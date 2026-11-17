@@ -1,16 +1,16 @@
 [component]
 name = "SigmaOS-data-processing"
 tier = 2
-stability = "scaffold"
+stability = "beta"
 language = "rust"
-description = "GitHub description is a placeholder; component scope remains unclassified."
+description = "Data processing engine with jobs, tasks, dependencies, and validation"
 upstream = []
 
 [contract]
-provides = ["component"]
+provides = ["data-processing", "task-scheduler"]
 depends_on = []
 
 [maturity]
-status = "Scaffold"
-test_evidence = "Compiles and passes AAA unit tests"
-next_milestone = "Hardware and runtime integration"
+status = "Implemented"
+test_evidence = "cargo test --offline unit tests pass"
+next_milestone = "Persistent job storage and dependency graph visualization"
